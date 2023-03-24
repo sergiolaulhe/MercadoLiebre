@@ -1,0 +1,3 @@
+Proyecto Mercado Liebre
+
+El objetivo del proyecto es replicar el sitio web e-commerce de Mercado Libre cumpliendo con las consignas establecidas en el curso de Digital House. En el mismo se debe iniciar el proyecto en Visual Studio Code utilizando Node.js, levantando un servidor con el framework Express, maquetar la estructura utilizando HTML y aplicar estilos con CSS. Flexbox...
