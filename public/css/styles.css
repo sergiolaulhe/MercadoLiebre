@@ -59,6 +59,10 @@ header {
     padding: 0;
 }
 
+.search-container input {
+    border: none;
+}
+
 .titulares {
     font-size: 24px;
 }
@@ -100,6 +104,7 @@ header {
 .products-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item-container {
@@ -148,6 +153,37 @@ header {
     margin-bottom: 10px;
     font-size: 2em;
     color: #1259c3;
+}
+
+/****** Form *******/
+
+.create-product-form {
+    padding: 20px 15px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.button-form {
+    background-color:#1259c3;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+
 }
 
 @media (min-width: 361px) {

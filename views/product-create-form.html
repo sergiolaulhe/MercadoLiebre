@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f5b0ad43f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="img/logo-mercado-liebre.svg" alt="Logo ML" class="logo">
+            <nav class="search-container">
+                <form action="" method="" >
+                    <input type="text" placeholder="Buscar productos, marcas y más...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </nav>
+            <div class="header-title">
+                <h3><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
+            </div>
+        </div>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="#">Creá tu cuenta</a><i class="fa-regular fa-address-card"></i></li>
+                <li><a href="#">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+            </ul>
+        </nav>
+        <div class="burger-menu-container">
+            <button class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <form action="/crear-producto" method="POST" class="create-product-form class=""">
+            <div class="form-control">
+                <label for="">Nombre del producto:</label>
+                <input type="text" name="name" class="control">
+            </div>
+            <div class="form-control">
+                <label for="">Precio:</label>
+                <input type="number" name="price" placeholder="123.56" class="control">
+            </div>
+            <div class="form-control">
+                <label for="">Categoría:</label>
+                <select name="category" id="" class="control">
+                    <option value="hogar">Hogar</option>
+                    <option value="electro">Electro</option>
+                    <option value="indumentaria">Indumentaria</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="">Ciudad:</label>
+                <select name="category" id="" class="control">
+                    <option value="bue">Buenos Aires</option>
+                    <option value="ros">Rosario</option>
+                    <option value="mdz">Mendoza</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="">Descripción:</label>
+                <textarea name="description" id="" cols="30" rows="10" class="control"></textarea>
+            </div>
+            <div class="form-control">
+                <label for="">Está en oferta: </label>
+                <input type="radio" name="onSale">
+            </div>
+            <button type="submit" class="button-form">Guardar</button>
+            <button type="reset" class="button-form">Borrar</button>
+        </form>
+
+    </main>
+
+    
+</body>
+</html>

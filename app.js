@@ -17,3 +17,9 @@ app.listen(3001, () => console.log('Servidor en linea en puerto 3200'));
 app.get('/', (req, res) =>  {
     res.sendFile(path.join(__dirname, '/views/index.html'));
 });
+app.get('/create', (req, res) =>  {
+    res.sendFile(path.join(__dirname, '/views/product-create-form.html'));
+});
+app.get('/register', (req, res) =>  {
+    res.sendFile(path.join(__dirname, '/views/register.html'));
+});
